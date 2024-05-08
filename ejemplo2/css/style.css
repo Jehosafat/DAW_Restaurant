@@ -1,0 +1,151 @@
+body {
+    font-family: 'Courier New';
+    margin: 0;
+    padding: 0;
+}
+
+header {
+	top: 20px; /* Posicionamiento superior */
+    left: 0; /* Posicionamiento izquierdo */
+    width: 200px; /* Ancho del menú */
+    height: 100vh; /* Altura del menú (100% del viewport) */
+    background-color: #888888; /* Color de fondo del menú */
+    padding: 20px; /* Padding interno del menú */
+	flex:1;
+    transition: all 0.3s ease; /* Animación de transición para suavizar los cambios */
+}
+
+h1 {
+    text-align: center;
+	display:block;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+	display: block; /* Ocupa todo el ancho disponible */
+    padding: 10px; /* Padding para cada enlace */
+    text-decoration: none; /* Elimina la decoración por defecto */
+    color: #fff; /* Color del texto de los enlaces */
+    transition: color 0.3s ease; /* Animación de transición para el color */
+
+}
+
+main {
+    padding: 20px;
+	display: inline;
+	flex:4;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h2, p {
+    text-align: center;
+}
+
+table {
+    width: 50%;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    justify-content: center;
+  align-items: center;
+}
+
+th, td {   
+    padding: 8px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+}
+
+.contenedor{
+	display:flex;
+}
+
+.encabezado{
+    background-image: url("../imagenes/platos.jpg");
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-size: cover;
+    color: black;
+    border-color: black;
+}
+
+#precios {
+  background-image: url("../imagenes/fondo1.jpg");
+  background-size: auto 100%;
+  color: white;
+}
+
+#formulario {
+  display: flex;
+}
+
+.text-container{
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.galeria {
+  margin: 5px;
+  width: auto;
+  height: 200px;
+
+  display: flex;
+  flex-wrap: nowrap; 
+  overflow-x: auto;
+}
+
+.galeria-img {
+  flex: 0 0 auto;
+  padding-inline: 10px;
+  text-align: center;
+}
+
+.galeria-img img{
+  width: 100%;
+  height: 99%;
+  border-radius: 7px;
+  border: 1px solid #ccc;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #d6dee1;
+  border-radius: 20px;
+  border: 7px solid transparent;
+  background-clip: content-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #a8bbbf;
+}
